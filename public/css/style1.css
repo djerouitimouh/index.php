@@ -1,0 +1,1404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   /* background-color: #f4f4f4;*/
+    font-size: 16px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+header {
+    padding: 70px;
+    background-color: #1679AB;
+    position: relative;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.login a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.login a:hover {
+    background-color: #f5f0f0;
+    color: #3a5d9e;
+}
+
+.bienvenue p {
+    position: absolute;
+    top: 20px;
+    right: 400px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    
+}
+.Home ul {
+    position: absolute; /* Positionnement relatif pour positionner le pseudo-élément */
+    list-style-type: none; /* Supprime les puces de la liste */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 140px;
+    left: 0;
+    right: 0;
+    background-color: #135D66; /* Couleur de fond */
+
+}
+
+.Home ul::before {
+    content: ""; /* Ajoute un contenu au pseudo-élément */
+    position: absolute; /* Positionnement absolu */
+    top: 140px;
+    left: 0;
+    width: 100%; /* Largeur de 100% de la ligne */
+    height: 100%; /* Hauteur de 100% */
+    background-color: #135D66; /* Couleur de fond */
+    z-index: -1; /* Pour placer le pseudo-élément en arrière-plan */
+}
+
+.Home ul li {
+    display: inline-block; /* Affiche les éléments de la liste en ligne */
+}
+
+.Home ul li a {
+    display: block; /* Transforme les liens en blocs pour les rendre cliquables sur toute la largeur */
+    padding: 10px 20px; /* Ajoute un espace autour du texte des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: white; /* Couleur du texte des liens */
+}
+
+.Home ul li a:hover {
+    background-color: #3a5d9e; /* Couleur de fond des liens au survol */
+}
+
+
+
+.image img {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+}
+
+body {
+    /*background-color: #F3EBF6;*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+
+.sign {
+    padding-top: 40px;
+    margin-bottom: 20px; /* Ajout de marge en bas */
+    color: #1679AB;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+
+.un {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 27px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #1679AB, #2991ab);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #2991ab;
+    padding-top: 15px;
+    text-align: center;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #2991ab;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+}
+.main1 {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 500px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+.pass {
+    position: relative; /* Positionnement relatif pour les libellés */
+    text-align: center; /* Centrer le texte */
+}
+
+.pass {
+     /* Centrer le libellé */
+    transform: translateX(-50%); /* Centrer le libellé horizontalement */
+    font-weight: bold; /* Texte en gras */
+    color: #2991ab; /* Couleur du texte */
+    font-size: 14px; /* Taille de police */
+}
+
+
+    
+
+
+
+
+       .svg-container {
+        position: absolute;
+        top: 300px;
+        right: 100px;
+        
+     
+    }   
+       /*end css connexion*/
+       .inscription {
+        background-color: #FFFFFF;
+        width: 400px;
+        height: px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        position: absolute;
+        left: 300px;
+        top: 100px;
+    }
+    header .bar ul {
+        display: flex;
+        list-style: none;
+    }
+    header .bar a {
+        display: block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        color: #F3EBF6;
+    }
+    
+    header .bar a:hover {
+        background-color:#135D66;
+        border-radius: 5px;
+    }
+    
+    header .bar a.active {
+        background-color: blue;
+        border-radius: 5px;
+    }
+    .content img{
+        height: 100%;
+        width: 50%;
+    }
+    .svg-container1 {
+        position: absolute;
+        top: 400px;
+        right: 10px;
+        
+     
+    }  
+    .demande {
+        position: absolute;
+        top: 180px;
+        right: 0px;
+        /* Autres paramètres de style */
+    }
+    
+    .demandbtn a{
+        background-color: #1679AB;
+        color: #fff; /* La couleur du texte pour tous les boutons */
+        border: #1679AB;
+        padding: 20px 40px;
+        border-radius: 3px;
+        cursor: pointer;
+        position: absolute;
+        top: 200px;
+        right: 3px;
+    }
+    
+    /* Vous pouvez spécifier une couleur différente pour la classe .demande-btn */
+    .demandbtn a {
+        color: #FFFFFF; /* Ou une autre couleur de votre choix */
+        text-decoration: none;
+         /* Pour supprimer le soulignement du lien */
+         font-size: 16px;
+    }
+    .explq{
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        top: 220px;
+        left: 670px;
+        font-size: 22px;
+        font-style: italic;
+    }
+    .imgrecette{
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    /*start votre_demande*/
+.vtr_demnd .card:hover {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .vtr_demnd .control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .vtr_demnd .control a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .vtr_demnd .control a:hover {
+    background-color: black;
+  }
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative; /* Pour positionner les éléments enfants */
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  
+  /* Style pour la réponse */
+  .card .reponse {
+    position: absolute;
+    top: 20px; /* Ajuster la position verticalement si nécessaire */
+    right: 20px; /* Ajuster la position horizontalement si nécessaire */
+    font-weight: bold;
+  }
+  
+  /* Style pour la réponse acceptée */
+  .card .reponse.accepte {
+    color: green; /* Couleur verte pour les réponses acceptées */
+  }
+  
+  /* Style pour la réponse refusée */
+  .card .reponse.refuse {
+    color: red; /* Couleur rouge pour les réponses refusées */
+  }
+  
+  
+  .detail-btn {
+    background-color: #1679AB;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .detail-btn:hover {
+    background-color: black;
+  }
+  .detailp-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 5px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .detail-btnp:hover {
+    background-color: black;
+  }
+  .detailv-btn {
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 5px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .detailv-btn:hover {
+    background-color: black;
+  }
+  .detaile-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .detaile-btn:hover {
+    background-color: black;
+  }
+  .demande-card {
+    position: relative;
+    background-color: beige;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+  }
+  
+  .demande-card h3 {
+    margin-bottom: 10px;
+  }
+  .demande-card form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .demande-card form .option {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .demande-card form .option input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .demande-card form .option.accepter {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+  }
+  
+  .demande-card form .option.refuser {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+  }
+  
+  .demande-card form input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .demande-card form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .demande-detail {
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .demande-detail .container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .demande-detail h3 {
+    color: #333;
+  }
+  
+  .demande-detail p {
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Ajout de la bordure */
+    padding: 10px; /* Ajout de rembourrage pour un meilleur espacement */
+     /* Augmenter la marge en bas */
+    
+  }
+
+  
+  .demande-card form p{
+   width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  /* Style pour la nouvelle champ "Réponse" */
+  .demande-card .reponse {
+    font-weight: bold;
+  }
+  /* style_modifier_demande.css */
+  
+  .modifier-demande {
+    margin-top: 50px;
+  }
+  
+  .modifier-demande .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .modifier-demande h2 {
+    color: #333;
+  }
+  
+  .modifier-demande form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modifier-demande form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .modifier-demande form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .modifier-demande form input[type="text"],
+  .modifier-demande form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  .modifier-demande form button {
+    background-color: #1679AB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .modifier-demande form button:hover {
+    background-color: #555;
+  }
+  /* pour les service */
+  .button-container {
+    text-align: center; /* Pour centrer les boutons horizontalement */
+    margin-top: 20px; /* Espace au-dessus des boutons */
+  }
+  
+  .custom-button {
+    display: inline-block; /* Pour aligner les boutons horizontalement */
+    padding: 10px 20px; /* Marge intérieure des boutons */
+    margin: 0 10px; /* Marge extérieure des boutons */
+    background-color: #007bff; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Enlever le soulignement des liens */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Transition en douceur lors du survol */
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
+  /*pour pret bouton*/
+  
+  .pret-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute; /* Position absolue pour le bouton */
+    top: 50px; /* Ajustement vertical */
+    right: 20px; /* Ajustement horizontal */
+  }
+  
+  .pret-btn:hover {
+    background-color: black;
+  }
+  .recuperer-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute; /* Position absolue pour le bouton */
+    top: 50px; /* Ajustement vertical */
+    right: 20px; /* Ajustement horizontal */
+  }
+  
+  .recuperer-btn:hover {
+    background-color: black;
+  }
+  .signal-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute; /* Position absolue pour le bouton */
+    top: 50px; /* Ajustement vertical */
+    right: 20px; /* Ajustement horizontal */
+  }
+  
+  .signal-btn:hover {
+    background-color: black;
+  }
+  .message {
+    margin-top: 30px;
+    padding: 8px; /* Ajoute un peu d'espace à l'intérieur de la bordure */
+    border: 1px solid; /* Ajoute une bordure de 1px solide */
+    border-radius: 5px; /* Rend les coins de la bordure arrondis */
+  }
+  
+  /* Style pour le message lorsque le document est prêt */
+  .message.ready {
+    background-color: #d4edda; /* Couleur de fond verte */
+    border-color: #c3e6cb; /* Couleur de la bordure verte */
+    margin-top: 30px;
+    padding: 8px; /* Ajoute un peu d'espace à l'intérieur de la bordure */
+    border: 1px solid; /* Ajoute une bordure de 1px solide */
+    border-radius: 5px; 
+  }
+  
+  /* Style pour le message lorsque le document n'est pas prêt */
+  .message.not-ready {
+    background-color: #f8d7da; /* Couleur de fond rouge */
+    border-color: #f5c6cb; 
+    margin-top: 30px;
+    padding: 8px; /* Ajoute un peu d'espace à l'intérieur de la bordure */
+    border: 1px solid; /* Ajoute une bordure de 1px solide */
+    border-radius: 5px; 
+    
+  }
+  /* Style du service recette */
+  /* Style des services */
+  /* Style des services */
+  .service {
+    clear: both;
+    margin-bottom: 40px;
+   
+}
+
+/* Style de l'en-tête du service */
+.service-header {
+  justify-content: center;
+    display: flex;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+/* Style du contenu du service */
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Conteneur pour chaque ligne de demandes */
+.ligne-demandes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Style des demandes */
+.demande-border, .demande-border-attente, .demande-border-refuser, .demande-border-pret {
+    width: calc(50% - 10px);
+    padding: 10px;
+    min-height: 150px;
+    position: relative;
+    border: 1px solid #1679AB; /* Couleur de bordure uniforme */
+    
+}
+
+/* Couleurs spécifiques pour chaque type de demande */
+.demande-border {
+    background-color: #c7faff; /* Bleu clair */
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.demande-border-attente {
+    background-color: #8bafb3; /* Rouge clair */
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.demande-border-refuser {
+    background-color: #c8d4ff; /* Vert clair */
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+
+.demande-border-pret {
+    background-color: #c7ffcd; /* Jaune clair */
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+  
+  /* Style des liens pour voir les détails */
+  .demande-border a,
+  .demande-border-attente a,
+  .demande-border-refuser a ,
+  .demande-border-pret a{
+    color: #333; /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: block; /* Affichage en bloc pour le positionnement absolu */
+    padding: 10px; /* Espacement intérieur */
+    background-color: #f0f0f0; /* Couleur de fond */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 3px; /* Bordure arrondie */
+    position: absolute; /* Positionnement absolu */
+    bottom: 10px; /* Décale le bouton vers le bas */
+    left: 50%; /* Positionne le bouton au centre */
+    transform: translateX(-50%); /* Centre le bouton horizontalement */
+  }
+  .demande-border p,
+  .demande-border-attente p,
+  .demande-border-refuser p,
+  .demande-border-pret p{
+    margin-top: 10px;
+  }
+  
+  /* Style des liens pour voir les détails au survol */
+  .demande-border a:hover,
+  .demande-border-attente a:hover,
+  .demande-border-refuser a:hover,
+  .demande-border-pret a:hover {
+    background-color: #ddd; /* Couleur de fond au survol */
+  }
+  
+  /* Style pour les titres de chaque demande */
+  .demande-border h3,
+  .demande-border-attente h3 {
+    margin-bottom: 10px; /* Marge en bas */
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .confirm-btn, .cancel-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .modal-content h2 {
+    margin-bottom: 20px;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close_signal{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .instructions {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #4CAF50; /* Green border */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.instructions h2 {
+    margin-top: 0;
+}
+
+.instructions p, .instructions ul {
+    margin: 10px 0;
+}
+
+.note {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ff9800; /* Orange border */
+    border-radius: 5px;
+    background-color: #fff8e1;
+}
+
+.demnd {
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.champ {
+    margin-bottom: 20px;
+}
+
+.champ label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.champ select,
+.champ textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.envoye {
+    text-align: center;
+}
+
+.envoye button[type="submit"] {
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.envoye button[type="submit"]:hover {
+    background-color: #555;
+}
+.title-border {
+  border: 2px solid blue; /* Blue border */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #1679AB;
+  margin-left: 120px;
+  margin-right: 120px;
+  color: white;
+}
+
+  /*start votre_demande*/
+  .vtr_demnd .card:hover {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .vtr_demnd .control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .vtr_demnd .control a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .vtr_demnd .control a:hover {
+    background-color: black;
+  }
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative; /* Pour positionner les éléments enfants */
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  
+  /* Style pour la réponse */
+  .card .reponse {
+    position: absolute;
+    top: 20px; /* Ajuster la position verticalement si nécessaire */
+    right: 20px; /* Ajuster la position horizontalement si nécessaire */
+    font-weight: bold;
+  }
+  
+  /* Style pour la réponse acceptée */
+  .card .reponse.accepte {
+    color: green; /* Couleur verte pour les réponses acceptées */
+  }
+  
+  /* Style pour la réponse refusée */
+  .card .reponse.refuse {
+    color: red; /* Couleur rouge pour les réponses refusées */
+  }
+  
+  
+  .detail-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .detail-btn:hover {
+    background-color: black;
+  }
+  .envoye button{
+    padding: 10px 20px;
+    background-color: #1679AB;
+    color: #fff;
+  }
+  .envoye button:hover{
+    background-color: #0056b3;
+  }
+  .search-bar {
+    margin: 30px 30px;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 80px); /* Pour prendre en compte les marges */
+    border-radius: 15px; /* Ajout de border radius */
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Ajout de border radius */
+    margin-left: 10px; /* Espace entre le champ de recherche et le bouton */
+}
+/* Style for toggle buttons */
+.toggle-btn {
+  background-color: #1679AB;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #125b7f;
+}
+
+.toggle-btn.active {
+  background-color: #0e3e57;
+}
+
+.toogle {
+  text-align: center;
+  margin: 20px 0;
+}
+.nombre-demandes {
+  padding: 5px 10px;
+  background-color: #3498db; /* Couleur de fond bleue */
+  color: white; /* Couleur de texte blanc */
+  border-radius: 5px; /* Coins arrondis */
+}
+/* Stylisation spécifique pour le tableau des utilisateurs */
+.user-table-container {
+  margin: 20px;
+}
+
+.user-table-container h2 {
+  color: #333;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.user-table th, .user-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+}
+
+.user-table button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-table button:hover {
+  background-color: #45a049;
+}
+
+.user-table button:active {
+  background-color: #3e8e41;
+}
+
+/* Style pour les boutons Supprimer */
+.user-table button.delete {
+  background-color: #f44336;
+}
+
+.user-table button.delete:hover {
+  background-color: #d32f2f;
+}
+
+.user-table button.delete:active {
+  background-color: #b71c1c;
+}
+.user-table a {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* Style pour les messages */
+.demande-card .message {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.demande-accept .message {
+  color: green;
+}
+
+.demande-refuse .message {
+  color: red;
+}
+.etat-demande {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.etat-acceptee {
+  background-color: #00FF00; /* Vert pour les demandes acceptées */
+}
+
+.etat-refusee {
+  background-color: #FF0000; /* Rouge pour les demandes refusées */
+}
+
+.etat-signalee {
+  background-color: #FF69B4; /* Rose pour les demandes signalées */
+}
+
+
+.etat-demande p {
+  font-weight: bold; /* Mettre en gras */
+}
+
+.etat-demande p.signal {
+  background-color: #FFD700; /* Couleur de fond pour les demandes signalées */
+}
+
+.etat-demande p.acceptee {
+  background-color: #00FF00; /* Couleur de fond pour les demandes acceptées */
+}
+.explanation {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.explanation h1 {
+  color: #007bff;
+}
+
+.services {
+  margin: 20px 0;
+}
+
+.service {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.service h2 {
+  color: #007bff;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ced4da;
+}
+.instructions {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+.instructions h2 {
+  margin-top: 0;
+}
+.instructions p {
+  margin: 10px 0;
+}
+.demande-signale {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.modal-content button {
+  background-color: #1679AB;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #fff;
+}
+.confirmation-dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.confirmation-dialog .dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.confirmation-dialog button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+}
+.notification {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.notification.unread {
+  background-color: #fdf2d5;
+  border-left: 5px solid #f7c948;
+}
+
+.notification.read {
+  background-color: #f4f4f9;
+  border-left: 5px solid #ccc;
+}
+
+.notification p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.notification .date {
+  font-size: 14px;
+  color: #999;
+}
+.notification {
+  position: relative;
+  padding-right: 40px; /* Ajouter de l'espace à droite pour le bouton */
+}
+/* Style pour le bouton "Marquer comme lu" */
+.notification button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition lors du survol */
+}
+
+/* Style pour le bouton "Marquer comme lu" au survol */
+.notification button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Style pour le bouton "Marquer comme lu" au focus */
+.notification button:focus {
+  outline: none; /* Supprimer la bordure au focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Ajouter une bordure au focus */
+}
+
+/* Style pour le bouton "Marquer comme lu" désactivé */
+.notification button[disabled] {
+  opacity: 0.5; /* Opacité réduite */
+  cursor: not-allowed; /* Curseur interdit */
+}
+
+
